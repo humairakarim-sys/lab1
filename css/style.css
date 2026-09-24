@@ -1,1 +1,114 @@
+/* CCT360 Lab 1 - Humaira's Student Showcase */
 
+/* Universal reset required for the lab */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General page styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Full-width header */
+header {
+    width: 100%;
+    background-color: #2f4f6f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+/* Main content area */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Introduction/profile section */
+.intro {
+    width: 100%;
+    background-color: white;
+    padding: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.intro h2 {
+    color: #2f4f6f;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 16px;
+}
+
+/* Container for the three cards */
+.cards-container {
+    width: 100%;
+}
+
+/* 
+   Mobile-first layout:
+   Cards stack vertically and take up the full width.
+*/
+.card {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.card h2 {
+    color: #2f4f6f;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 15px;
+}
+
+/* Full-width footer */
+footer {
+    width: 100%;
+    background-color: #2f4f6f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 24px;
+}
+
+
+/* 
+   Desktop layout:
+   At 768px and above, the cards appear side-by-side.
+*/
+@media (min-width: 768px) {
+
+    .card {
+        display: inline-block;
+        width: 30%;
+        margin-right: 3%;
+        vertical-align: top;
+    }
+
+    /* Removes extra margin from the final card */
+    .card:last-child {
+        margin-right: 0;
+    }
+}
